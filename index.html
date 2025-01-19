@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortune Teller</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- 引入 CSS 文件 -->
+  </head>
+  <body>
+    <div id="home">
+      <img src="fortune-teller.png" alt="Fortune Teller" />
+      <div id="description">
+        <p class="english" id="englishDescription">
+          This old man knows your information. Due to the punishment for
+          revealing the secrets of the universe, he can only show you images.
+          The rest is up to your imagination.
+        </p>
+        <p class="chinese" id="chineseDescription" style="display: none">
+          老夫知道你的信息，因為洩露宇宙秘密會遭到懲罰，所以只能給你看圖像，剩下的就靠你自己想像了。
+        </p>
+      </div>
+      <button id="viewFortune">View Fortune</button>
+      <button id="languageToggle">English</button>
+    </div>
+
+    <div id="image" style="display: none">
+      <div id="fortuneImage"></div>
+      <button id="back">Back</button>
+    </div>
+
+    <script src="script.js" type="module"></script>
+    <!-- 引入 JavaScript 文件 -->
+  </body>
+</html>

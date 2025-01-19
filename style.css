@@ -1,0 +1,79 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff; /* Set the background color to white */
+  color: #000; /* Set the text color to black */
+}
+
+#home {
+  text-align: center;
+}
+
+#home img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+#description {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.english,
+.chinese {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #003153; /* Prussian Blue */
+  color: #fff; /* Set the button text color */
+  cursor: pointer;
+}
+
+#viewFortune {
+  margin-top: 20px;
+}
+
+#back {
+  margin-top: 20px;
+}
+
+#languageToggle {
+  margin-top: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+  #description {
+    max-width: 90%;
+  }
+
+  #home img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.fortune-grid {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.fortune-grid td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 24px;
+}
